@@ -24,7 +24,7 @@ puts 'Total number of events to process: ' + data.length.to_s
 new_data = []
 
 data.each do |event|  
-	puts i.to_s + " out of " + data.length.to_s
+	puts (i+1).to_s + " out of " + data.length.to_s
 	new_event = event
 	new_event['keen'].delete('created_at') 
 	new_event['keen'].delete('id')
