@@ -29,7 +29,7 @@ data.each do |event|
 	new_event['keen'].delete('created_at') 
 	new_event['keen'].delete('id')
 
-	new_data << event
+	new_data << new_event
 	i = i + 1
 end
 
